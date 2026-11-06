@@ -8,7 +8,19 @@
       content="Portfólio de Jeziel M. Pessoa, graduando em Engenharia de Software, com projetos e interesses em desenvolvimento, inteligência artificial e sistemas embarcados."
     />
     <meta name="author" content="Jeziel M. Pessoa" />
-    <meta name="theme-color" content="#0a0a0f" />
+    <meta name="theme-color" content="#f8fbff" />
+
+    <script>
+      (() => {
+        try {
+          const savedTheme = window.localStorage.getItem('portfolio-theme');
+          const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.dataset.theme = savedTheme || systemTheme;
+        } catch {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://jeziel-monteiro.github.io/" />
@@ -30,8 +42,8 @@
     />
 
     <title>Jeziel M. Pessoa | Portfólio</title>
-    <script type="module" crossorigin src="/assets/index-Ca6ZTDpd.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BVyG3w74.css">
+    <script type="module" crossorigin src="/assets/index-B4hzg7r1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B6kgZKcA.css">
   </head>
   <body>
     <div id="root"></div>
